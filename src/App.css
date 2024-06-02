@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+body {
+  background-color: #fff;
+  place-items: start !important;
+  display: block !important;
+}
+
+.portfolio {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.toolbar {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 5px;
+}
+
+.toolbar .filter-btn {
+  display: block;
+  padding: 4px 16px;
+  font-size: 17px;
+  color: #555555;
+  background-color: #fff;
+  border: 1px solid #555;
+  text-decoration: none;
+}
+
+.toolbar .filter-btn:hover {
+  color: #fff;
+  background-color: #3E3E3E;
+  border-color: transparent;
+}
+
+.toolbar .filter-btn.active {
+  color: #fff;
+  background-color: #555;
+  border-color: transparent;
+}
+
+.toolbar .filter-btn:focus,
+.toolbar .filter-btn:active {
+  outline: none;
+  border-color: transparent;
+}
+
+.projects {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+.projects .project {
+  margin-bottom: 10px;
+}
+.projects .project img {
+  width: 100%;
+}
